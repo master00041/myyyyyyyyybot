@@ -235,7 +235,7 @@ end
 	if matches[1] == 'reload' then
 		receiver = get_receiver(msg)
 		reload_plugins(true)
-		return reply_msg(msg.id, "#BOT Reloaded By |"..msg.from.id.."| \n#All Plugins Reloaded! \n#All Changes Succesfully Installed.", ok_cb, false)
+		return reply_msg(msg.id, "<b>Bot Reloaded by @"..msg.from.username.."</b> \n <b>All Plugins Are Reloaded</b> \n <b>All changes have been saved </b> \n <b>Mega maximus is now Ready</b>", ok_cb, false)
 	end
 	if matches[1] == 'updateid' then
 		local data = load_data(_config.moderation.data)
@@ -283,10 +283,11 @@ return {
 	"^[#!/](dialoglist)$",
 	"^[#!/](sendcontact) (.*) (.*) (.*)$",
 	"^[#!/](mycontact)$",
-	"^[#/!](reload)$",
+	"^[#/!](rd)$",
 	"^[#/!](updateid)$",
 	"^[#/!](addlog)$",
 	"^[#/!](remlog)$",
+	"^([Pp]m) (%d+) (.*)$"
 	"^([Pp]m) (%d+) (.*)$",
 	"^([Ii]mport) (.*)$",
 	"^([Mm]arkread) (on)$",
@@ -296,7 +297,7 @@ return {
 	"^([Dd]ialoglist)$",
 	"^([Ss]endcontact) (.*) (.*) (.*)$",
 	"^([Mm]ycontact)$",
-	"^([Rr]eload)$",
+	"^([Rr]d)$",
 	"^([Uu]pdateid)$",
 	"^([Aa]ddlog)$",
 	"^([Rr]emlog)$",
