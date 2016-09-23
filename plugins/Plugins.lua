@@ -78,7 +78,7 @@ local function list_plugins(only_enabled)
       text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\nBot Version > 6.9'
+  local text = text..'\n<b>Bot version 6.9</b>'
   return text
 end
 
